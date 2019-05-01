@@ -521,7 +521,7 @@ display:block;
         .tablet{
             display:inline;
         }
-        .tablet #menu-toggle , .logo{
+        .tablet #menu-toggle1 , .logo{
             float:left;
             max-width:30%;
             position:relative;
