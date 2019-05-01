@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="styleyoutube.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--fontawsome cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+      <title>Hello, world!</title>
+    <!--open sans font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+            $( function() {
+              $( "#tabs" ).tabs();
+            } );
+            </script>
+</head>
+  <body>
+       <nav id="sidebar-wrapper">
+            <a class="pull-right" id="menu-close" href="#"><img src="images/x.png" height="15" width="15"></a>
+          <ul class="sidebar">
+             
+              <ul class="ul">
+                  <li class="title">Menu</li>
+                  <li><a href="#"><i class="fa fa-eye"></i>What To Watch</a></li>
+                  <li><a href="#"><i class="fa fa-user"></i>My Channel</a></li>
+                  <li><a href="#"><i class="fa fa-clock"></i>History</a></li>
+                  <li><a href="#"><i class="fa fa-redo-alt"></i>What Later</a></li>
+              </ul>
+
+              <ul class="ul" id="playlist">
+                    <li class="title">Playlists</li>
+                    <li><a href="#"><i class="fa fa-headphones"></i>Best Of David Guetta<p>David Guetta</p></a></li>
+                    <li><a href="#"><i class="fa fa-film"></i>Favorite Videos <p>check your Favorite videos</p></a></li>
+                    <li><a href="#"><i class="fa fa-thumbs-up"></i>Liked Videos <p>Reach all the videos you like</p></a></li>
+                </ul>
+
+                <ul class="ul" id="subs">
+                        <li class="title">Subscription</li>
+                        <li><a href="#"><img src="images/6947-nike-shoes-png.png" height="50" width="50">Nikeshoes</a></li>
+                        <li><a href="#"><img src="images/6947-nike-shoes-png.png" height="50" width="50">ShakiraVIVO</a></li>
+                        <li><a href="#"><img src="images/6947-nike-shoes-png.png" height="50" width="50">Nikefootball</a></li>
+                    </ul>
+           </ul>
+      </nav> <!--end sidebar-->
+     
+     
+    <header> <!--header for phone and phablet-->
+   <div class="container-fluid phone">
+       <div class="row">
+           <div class="col-md-2">
+            <a href="#" id="menu-toggle"><img src="images/align-justify-512.png" height="30"width="25"></a>
+            <a href="#"><img src="images/youtube_PNG5.png"  class="logo" ></a>
+           </div><!--end logo and menu toggle-->
+<!--for phone and phablet small notification-->
+<div class="col-sm">
+        <ul id="user-info">
+           <li class="user">
+                   <ul class="notifications">
+                        <li data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope"></i><span>2</span></li>
+                        <li data-toggle="modal" data-target="#myModal"><i class="fas fa-bell"></i><span>1</span></li>
+                      </ul>
+                      <img   src="images/Profile-ICon.png" height="50px"widht="50px">
+                  <div>
+                      <p class="username">Danie</p>
+                      <p >Subcribers</p>
+                      <a  class="log" href="#"><span>Log Out</span></a>
+                  </div>
+            </li>
+            <li>  
+            </li>
+              <li class="upload"> <a href="#" >UPLOAD</a></li>
+        </ul>
+</div> 
+        <!--End small notification-->
+        <div class="col-md-5">
+            <form>
+                <div class="form-group has-search">
+                    <input type="text"  placeholder="Type To Search">
+                </div>
+            </form>
+        </div> <!--end search bar-->
+        <!--notifications-->
+        <div class="col-md-5">
+          <ul id="user-info">
+              <li class="upload"> <a href="#" >UPLOAD</a></li>
+              <li>
+                  <ul class="notifications">
+                      <li data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope"></i><span>2</span></li>
+                      <li data-toggle="modal" data-target="#myModal"><i class="fas fa-bell"></i><span>1</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <img   src="images/Profile-ICon.png" height="50px"widht="50px">
+                    <div>
+                        <p class="username">Danie</p>
+                        <p >Subcribers</p>
+                        <a  class="log" href="#"><span>Log Out</span></a>
+                    </div>
+                </li>
+                </ul>
+          </div> 
+
+         <!--popup-->
+                    <div class="container">
+                            <!-- Modal 1 -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                              <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h4 class="modal-title">Your Message</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>You have 1 New Message</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+         <!--end of modal 1-->
+                    
+         <!-- Modal -->
+             <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal 2 content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Your Message</h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>You have 1 New Message</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--ende of modal 2 -->
+                          <!--end  popup-->
+                 
+       </div><!--end row-->
+    </header>
+
+    <header> <!--header for tablet-->
+        <div class="container-fluid tablet">
+            <div class="row">
+                <div class="col-md-2">
+                 <a href="#" id="menu-toggle"><img src="images/align-justify-512.png" height="30"width="25"></a>
+                 <a href="#"><img src="images/youtube_PNG5.png"  class="logo" ></a>
+                </div><!--end logo and menu toggle-->
+
+                <div class="col-md-4">
+                        <form>
+                            <div class="form-group has-search">
+                                <input type="text"  placeholder="Type To Search">
+                               
+                            </div>
+                        </form>
+                    </div> <!--end search bar-->
+             <!--notifications-->
+             <div class="col-md-6 noti">
+               <ul id="user-info">
+                   <li> 
+                         <div> <ul class="notifications">
+                        <li data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope"></i><span>2</span></li>
+                        <li data-toggle="modal" data-target="#myModal"><i class="fas fa-bell"></i><span>1</span></li>
+                        </ul>
+                    <img   src="images/Profile-ICon.png" height="50px"widht="50px">
+                            <p class="username">Danie</p>
+                            <p >Subcribers</p>
+                            <a  class="log" href="#"><span>Log Out</span></a>
+                   
+                   
+                            </div>
+                        </li>
+                     </ul>
+               </div> 
+ 
+                     
+                  
+               
+     
+              <!--popup-->
+                         <div class="container">
+                                 <!-- Modal 1 -->
+                                 <div class="modal fade" id="myModal" role="dialog">
+                                   <div class="modal-dialog">
+                                     <!-- Modal content-->
+                                     <div class="modal-content">
+                                       <div class="modal-header">
+                                         <h4 class="modal-title">Your Message</h4>
+                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                       </div>
+                                       <div class="modal-body">
+                                         <p>You have 1 New Message</p>
+                                       </div>
+                                       <div class="modal-footer">
+                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+              <!--end of modal 1-->
+                         
+              <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                                 <div class="modal-dialog">
+                                   <!-- Modal 2 content-->
+                                   <div class="modal-content">
+                                     <div class="modal-header">
+                                       <h4 class="modal-title">Your Message</h4>
+                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                     </div>
+                                     <div class="modal-body">
+                                       <p>You have 1 New Message</p>
+                                     </div>
+                                     <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                             <!--ende of modal 2 -->
+                               <!--end  popup-->
+                      
+            </div><!--end row-->
+         </header>  
+   <hr><!--end container-fluid-->
+<!--end header-->
+   <div id="tabs">
+        <div class="container-fluid">
+         <ul class="tab" >
+                <li id="tab1"><a href="#tab-1">Home</a></li>
+                <li id="tab2"class="active"><a href="#tab-2">Trending</a></li>
+                <li id="tab3"><a href="#tab-3">Subscription</a></li>
+         </ul><!--tabs-->         
+        </div>
+        <div id="tab-2">
+            <hr>
+            <div class="row" >
+                <p>
+            <div  class="col-md-3 video main">
+                <div class="area">
+                    <div class="mask">
+                        <div class="vertical-align">
+                            <i class="fa fa-play-circle"></i>
+                            <p>Play Now</p>
+                        </div><!--vertical align-->
+                    </div><!--mask-->
+                        <img src="images/vector.jpg" width="300" class="img-responsive">
+                        <span class="duration">44:21</span>
+                   
+                </div><!--area-->
+                <h4>West Super Bowl 2015</h4>
+                <p><span>9 Days Ago</span>By <a href="#">West Super Bowl</a>-10 123 123 Views</p>
+            </div><!--col-->
+        <!--end of first video-->
+        <div class="col-md-3 video main">
+                <div class="area">
+                    <div class="mask">
+                        <div class="vertical-align">
+                            <i class="fa fa-play-circle"></i>
+                            <p>Play Now</p>
+                        </div><!--vertical align-->
+                    </div><!--mask-->
+                        <img src="images/vector.jpg" width="300" class="img-responsive">
+                        <span class="duration">44:21</span>
+                   
+                </div><!--area-->
+                <h4>West Super Bowl 2015</h4>
+                <p><span>9 Days Ago</span>By <a href="#">West Super Bowl</a>-10 123 123 Views</p>
+            </div><!--col-->
+                <!--End of second videos-->
+                <ul class="mini">
+                    <li class="col-md-2 video ">
+                            <div class="area">
+                                    <div class="mask">
+                                        <div class="vertical-align">
+                                            <i class="fa fa-play-circle"></i>
+                                            <p>Play Now</p>
+                                        </div><!--vertical align-->
+                                    </div><!--mask-->
+                                        <img src="images/vector.jpg" width="200" height="80"class="img-responsive">
+                                        <span class="duration">44:21</span>
+                            </div><!--area-->
+                                
+                                <h6>Shakira Waka-Waka</h6>
+                                <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                <p class="views">-10 123 123 Views</p>
+                    </li>
+                    <!--end of first mini video-->
+                    <li class="col-md-2 video">
+                            <div class="area">
+                                    <div class="mask">
+                                        <div class="vertical-align">
+                                            <i class="fa fa-play-circle"></i>
+                                            <p>Play Now</p>
+                                        </div><!--vertical align-->
+                                        </div><!--mask-->
+                                        <img src="images/vector.jpg" width="200" height="80"class="img-responsive">
+                                        <span class="duration">44:21</span>
+                                    
+                                </div><!--area-->
+                                <h6>Shakira Waka-Waka</h6>
+                                <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                <p class="views">-10 123 123 Views</p>
+                    </li>
+                    <!--end of second mini video-->
+                </ul>
+                <ul class="mini">
+                        <li class="col-md-2 video">
+                                <div class="area">
+                                        <div class="mask">
+                                            <div class="vertical-align">
+                                                <i class="fa fa-play-circle"></i>
+                                                <p>Play Now</p>
+                                            </div><!--vertical align-->
+                                            </div><!--mask-->
+                                            <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                            <span class="duration">44:21</span>
+                                        
+                                    </div><!--area-->
+                                    <h6>Shakira Waka-Waka</h6>
+                                    <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                    <p class="views">-10 123 123 Views</p>
+                        </li>
+                         <!--end of third mini video-->
+                        <li class="col-md-2 video">
+                                <div class="area">
+                                        <div class="mask">
+                                            <div class="vertical-align">
+                                                <i class="fa fa-play-circle"></i>
+                                                <p>Play Now</p>
+                                            </div><!--vertical align-->
+                                            </div><!--mask-->
+                                            <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                            <span class="duration">44:21</span>
+                                      
+                                    </div><!--area-->
+                                    <h6>Shakira Waka-Waka</h6>
+                                    <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                    <p class="views">-10 123 123 Views</p>
+                        </li>
+                        <!--end of fourth mini video-->
+                    </ul>
+                </p>
+            </div><!--row-->
+        
+        <!--end of grid videos--></div>
+        <div id="tab-1">
+            <hr>
+            <div class="row" >
+                    <p>
+                    <ul class="mini">
+                        <li class="col-md-2 video ">
+                                <div class="area">
+                                        <div class="mask">
+                                            <div class="vertical-align">
+                                                <i class="fa fa-play-circle"></i>
+                                                <p>Play Now</p>
+                                            </div><!--vertical align-->
+                                        </div><!--mask-->
+                                            <img src="images/vector.jpg" width="200" height="80"class="img-responsive">
+                                            <span class="duration">44:21</span>
+                                </div><!--area-->
+                                    
+                                    <h6>Shakira Waka-Waka</h6>
+                                    <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                    <p class="views">-10 123 123 Views</p>
+                        </li>
+                        <!--end of first mini video-->
+                        <li class="col-md-2 video">
+                                <div class="area">
+                                        <div class="mask">
+                                            <div class="vertical-align">
+                                                <i class="fa fa-play-circle"></i>
+                                                <p>Play Now</p>
+                                            </div><!--vertical align-->
+                                            </div><!--mask-->
+                                            <img src="images/vector.jpg" width="200" height="80"class="img-responsive">
+                                            <span class="duration">44:21</span>
+                                        
+                                    </div><!--area-->
+                                    <h6>Shakira Waka-Waka</h6>
+                                    <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                    <p class="views">-10 123 123 Views</p>
+                        </li>
+                        <!--end of second mini video-->
+                        
+                    </ul>
+                    <ul class="mini">
+                            <li class="col-md-2 video">
+                                    <div class="area">
+                                            <div class="mask">
+                                                <div class="vertical-align">
+                                                    <i class="fa fa-play-circle"></i>
+                                                    <p>Play Now</p>
+                                                </div><!--vertical align-->
+                                                </div><!--mask-->
+                                                <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                <span class="duration">44:21</span>
+                                            
+                                        </div><!--area-->
+                                        <h6>Shakira Waka-Waka</h6>
+                                        <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                        <p class="views">-10 123 123 Views</p>
+                            </li>
+                             <!--end of third mini video-->
+                            <li class="col-md-2 video">
+                                    <div class="area">
+                                            <div class="mask">
+                                                <div class="vertical-align">
+                                                    <i class="fa fa-play-circle"></i>
+                                                    <p>Play Now</p>
+                                                </div><!--vertical align-->
+                                                </div><!--mask-->
+                                                <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                <span class="duration">44:21</span>
+                                          
+                                        </div><!--area-->
+                                        <h6>Shakira Waka-Waka</h6>
+                                        <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                        <p class="views">-10 123 123 Views</p>
+                            </li>
+                            <!--end of fourth mini video-->
+                        </ul>
+                        <ul class="mini">
+                                <li class="col-md-2 video">
+                                        <div class="area">
+                                                <div class="mask">
+                                                    <div class="vertical-align">
+                                                        <i class="fa fa-play-circle"></i>
+                                                        <p>Play Now</p>
+                                                    </div><!--vertical align-->
+                                                    </div><!--mask-->
+                                                    <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                    <span class="duration">44:21</span>
+                                                
+                                            </div><!--area-->
+                                            <h6>Shakira Waka-Waka</h6>
+                                            <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                            <p class="views">-10 123 123 Views</p>
+                                </li>
+                                 <!--end of third mini video-->
+                                <li class="col-md-2 video">
+                                        <div class="area">
+                                                <div class="mask">
+                                                    <div class="vertical-align">
+                                                        <i class="fa fa-play-circle"></i>
+                                                        <p>Play Now</p>
+                                                    </div><!--vertical align-->
+                                                    </div><!--mask-->
+                                                    <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                    <span class="duration">44:21</span>
+                                              
+                                            </div><!--area-->
+                                            <h6>Shakira Waka-Waka</h6>
+                                            <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                            <p class="views">-10 123 123 Views</p>
+                                </li>
+                                <!--end of fourth mini video-->
+                            </ul>
+                            <ul class="mini">
+                                    <li class="col-md-2 video">
+                                            <div class="area">
+                                                    <div class="mask">
+                                                        <div class="vertical-align">
+                                                            <i class="fa fa-play-circle"></i>
+                                                            <p>Play Now</p>
+                                                        </div><!--vertical align-->
+                                                        </div><!--mask-->
+                                                        <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                        <span class="duration">44:21</span>
+                                                    
+                                                </div><!--area-->
+                                                <h6>Shakira Waka-Waka</h6>
+                                                <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                                <p class="views">-10 123 123 Views</p>
+                                    </li>
+                                     <!--end of third mini video-->
+                                    <li class="col-md-2 video">
+                                            <div class="area">
+                                                    <div class="mask">
+                                                        <div class="vertical-align">
+                                                            <i class="fa fa-play-circle"></i>
+                                                            <p>Play Now</p>
+                                                        </div><!--vertical align-->
+                                                        </div><!--mask-->
+                                                        <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                        <span class="duration">44:21</span>
+                                                  
+                                                </div><!--area-->
+                                                <h6>Shakira Waka-Waka</h6>
+                                                <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                                <p class="views">-10 123 123 Views</p>
+                                    </li>
+                                    <!--end of fourth mini video-->
+                                </ul>
+                                <ul class="mini">
+                                        <li class="col-md-2 video">
+                                                <div class="area">
+                                                        <div class="mask">
+                                                            <div class="vertical-align">
+                                                                <i class="fa fa-play-circle"></i>
+                                                                <p>Play Now</p>
+                                                            </div><!--vertical align-->
+                                                            </div><!--mask-->
+                                                            <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                            <span class="duration">44:21</span>
+                                                        
+                                                    </div><!--area-->
+                                                    <h6>Shakira Waka-Waka</h6>
+                                                    <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                                    <p class="views">-10 123 123 Views</p>
+                                        </li>
+                                         <!--end of third mini video-->
+                                        <li class="col-md-2 video">
+                                                <div class="area">
+                                                        <div class="mask">
+                                                            <div class="vertical-align">
+                                                                <i class="fa fa-play-circle"></i>
+                                                                <p>Play Now</p>
+                                                            </div><!--vertical align-->
+                                                            </div><!--mask-->
+                                                            <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                            <span class="duration">44:21</span>
+                                                      
+                                                    </div><!--area-->
+                                                    <h6>Shakira Waka-Waka</h6>
+                                                    <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                                    <p class="views">-10 123 123 Views</p>
+                                        </li>
+                                        <!--end of fourth mini video-->
+                                    </ul>
+                    </p>
+                </div><!--row-->
+        </div>
+        <div id="tab-3">
+            <hr>
+            <div class="row">   
+                  <div  class="col-md-3 video main">
+                    <div class="area">
+                        <div class="mask">
+                            <div class="vertical-align">
+                                <i class="fa fa-play-circle"></i>
+                                <p>Play Now</p>
+                            </div><!--vertical align-->
+                        </div><!--mask-->
+                            <img src="images/vector.jpg" width="300" class="img-responsive">
+                            <span class="duration">44:21</span>
+                       
+                    </div><!--area-->
+                    <h4>West Super Bowl 2015</h4>
+                    <p><span>9 Days Ago</span>By <a href="#">West Super Bowl</a>-10 123 123 Views</p>
+                </div><!--col-->
+                <div  class="col-md-3 video main">
+                        <div class="area">
+                            <div class="mask">
+                                <div class="vertical-align">
+                                    <i class="fa fa-play-circle"></i>
+                                    <p>Play Now</p>
+                                </div><!--vertical align-->
+                            </div><!--mask-->
+                                <img src="images/vector.jpg" width="300" class="img-responsive">
+                                <span class="duration">44:21</span>
+                           
+                        </div><!--area-->
+                        <h4>West Super Bowl 2015</h4>
+                        <p><span>9 Days Ago</span>By <a href="#">West Super Bowl</a>-10 123 123 Views</p>
+                    </div><!--col-->
+                <div  class="col-md-3 video main">
+                        <div class="area">
+                            <div class="mask">
+                                <div class="vertical-align">
+                                    <i class="fa fa-play-circle"></i>
+                                    <p>Play Now</p>
+                                </div><!--vertical align-->
+                            </div><!--mask-->
+                                <img src="images/vector.jpg" width="300" class="img-responsive">
+                                <span class="duration">44:21</span>
+                           
+                        </div><!--area-->
+                        <h4>West Super Bowl 2015</h4>
+                        <p><span>9 Days Ago</span>By <a href="#">West Super Bowl</a>-10 123 123 Views</p>
+                    </div><!--col-->
+                    <div  class="col-md-3 video main">
+                            <div class="area">
+                                <div class="mask">
+                                    <div class="vertical-align">
+                                        <i class="fa fa-play-circle"></i>
+                                        <p>Play Now</p>
+                                    </div><!--vertical align-->
+                                </div><!--mask-->
+                                    <img src="images/vector.jpg" width="300" class="img-responsive">
+                                    <span class="duration">44:21</span>
+                               
+                            </div><!--area-->
+                            <h4>West Super Bowl 2015</h4>
+                            <p><span>9 Days Ago</span>By <a href="#">West Super Bowl</a>-10 123 123 Views</p>
+                        </div><!--col-->
+        </div>
+    </div>
+
+     </div>
+<hr>
+<div class="container-fluid">
+        <div class="row">
+          
+                <div class="col-md-3 channel-bio">
+                        <div class="channel-name">
+                                <img src="images/6947-nike-shoes-png.png" width="150" height="150">
+                                Nike Shoes
+                            </div>
+                            <hr>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  including versions of Lorem Ipsum.</p>
+                       <a href="#" >More Videos</a>
+                </div><!--bio-->
+                <div class="col-md-3">
+                        <li class="col-md-2 video">
+                                <div class="area">
+                                        <div class="mask">
+                                            <div class="vertical-align">
+                                                <i class="fa fa-play-circle"></i>
+                                                <p>Play Now</p>
+                                            </div><!--vertical align-->
+                                        </div><!--mask-->
+                                            <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                            <span class="duration">44:21</span>
+                                        
+                                    </div><!--area-->
+                                    <h6>Nike Air Max Review</h6>
+                                    <p><span>3 Days Ago</span>By <a href="#"> Nike Shoes</a></p>
+                                    <p class="views">-21 943 768 Views</p>
+                        </li>
+        
+                </div>
+                <div class="col-md-3">
+                        <li class="col-md-2 video">
+                                <div class="area">
+                                        <div class="mask">
+                                            <div class="vertical-align">
+                                                <i class="fa fa-play-circle"></i>
+                                                <p>Play Now</p>
+                                            </div><!--vertical align-->
+                                        </div><!--mask-->
+                                            <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                            <span class="duration">44:21</span>
+                                    
+                                    </div><!--area-->
+                                    <h6>Shakira Waka-Waka</h6>
+                                    <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                    <p class="views">-10 123 123 Views</p>
+                        </li>
+        
+                </div>
+                <div class="col-md-3">
+                        <li class="col-md-2 video">
+                                <div class="area">
+                                        <div class="mask">
+                                            <div class="vertical-align">
+                                                <i class="fa fa-play-circle"></i>
+                                                <p>Play Now</p>
+                                            </div><!--vertical align--> 
+                                        </div><!--mask-->
+                                            <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                            <span class="duration">44:21</span>
+                                       
+                                    </div><!--area-->
+                                    <h6>Shakira Waka-Waka</h6>
+                                    <p><span>3 Days Ago</span>By <a href="#"> Nike Shoes</a></p>
+                                    <p class="views">-21 943 768 Views</p>
+                        </li>
+        
+                </div>
+                </div>
+            </div>
+            <hr>
+<div class="container-fluid">
+        <div class="row">
+          
+                <div class="col-md-3 channel-bio ">
+                        <div class="channel-name">
+                                <img src="images/6947-nike-shoes-png.png" width="150" height="150">
+                                Nike Shoes
+                            </div>
+                            <hr>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  including versions of Lorem Ipsum.</p>
+                            <a href="#" >More Videos</a>
+                </div><!--bio-->
+                <div class="col-md-3">
+                        <li class="col-md-2 video">
+                                <div class="area">
+                                        <div class="mask">
+                                            <div class="vertical-align">
+                                                <i class="fa fa-play-circle"></i>
+                                                <p>Play Now</p>
+                                            </div><!--vertical align-->
+                                        </div><!--mask-->
+                                            <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                            <span class="duration">44:21</span>
+                                     
+                                    </div><!--area-->
+                                    <h6>Nike Air Max Review</h6>
+                                    <p><span>3 Days Ago</span>By <a href="#"> Nike Shoes</a></p>
+                                    <p class="views">-21 943 768 Views</p>
+                        </li>
+        
+                </div>
+                <div class="col-md-3">
+                        <li class="col-md-2 video">
+                                <div class="area">
+                                        <div class="mask">
+                                            <div class="vertical-align">
+                                                <i class="fa fa-play-circle"></i>
+                                                <p>Play Now</p>
+                                            </div><!--vertical align-->
+                                        </div><!--mask-->
+                                            <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                            <span class="duration">44:21</span>
+                                      
+                                    </div><!--area-->
+                                    <h6>Shakira Waka-Waka</h6>
+                                    <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                    <p class="views">-10 123 123 Views</p>
+                        </li>
+        
+                </div>
+                <div class="col-md-3">
+                        <li class="col-md-2 video">
+                                <div class="area">
+                                        <div class="mask">
+                                            <div class="vertical-align">
+                                                <i class="fa fa-play-circle"></i>
+                                                <p>Play Now</p>
+                                            </div><!--vertical align-->
+                                        </div><!--mask-->
+                                            <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                            <span class="duration">44:21</span>
+                                       
+                                    </div><!--area-->
+                                    <h6>Shakira Waka-Waka</h6>
+                                    <p><span>3 Days Ago</span>By <a href="#"> Nike Shoes</a></p>
+                                    <p class="views">-21 943 768 Views</p>
+                        </li>
+        
+                </div>
+                </div>
+            </div>
+            <!--End Of Shakira-->
+            <hr>
+            <div class="container-fluid">
+                    <div class="row">
+                      
+                            <div class="col-md-3 channel-bio">
+                                    <div class="channel-name">
+                                            <img src="images/6947-nike-shoes-png.png" width="150" height="150">
+                                            Nike Shoes
+                                        </div>
+                                        <hr>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  including versions of Lorem Ipsum.</p>
+                                   <a href="#" >More Videos</a>
+                            </div><!--bio-->
+                            <div class="col-md-3">
+                                    <li class="col-md-2 video">
+                                            <div class="area">
+                                                    <div class="mask">
+                                                        <div class="vertical-align">
+                                                            <i class="fa fa-play-circle"></i>
+                                                            <p>Play Now</p>
+                                                        </div><!--vertical align-->
+                                                    </div><!--mask-->
+                                                        <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                        <span class="duration">44:21</span>
+                                                    
+                                                </div><!--area-->
+                                                <h6>Nike Air Max Review</h6>
+                                                <p><span>3 Days Ago</span>By <a href="#"> Nike Shoes</a></p>
+                                                <p class="views">-21 943 768 Views</p>
+                                    </li>
+                    
+                            </div>
+                            <div class="col-md-3">
+                                    <li class="col-md-2 video">
+                                            <div class="area">
+                                                    <div class="mask">
+                                                        <div class="vertical-align">
+                                                            <i class="fa fa-play-circle"></i>
+                                                            <p>Play Now</p>
+                                                        </div><!--vertical align-->
+                                                    </div><!--mask-->
+                                                        <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                        <span class="duration">44:21</span>
+                                                
+                                                </div><!--area-->
+                                                <h6>Shakira Waka-Waka</h6>
+                                                <p><span>2 Weeks Ago</span>By <a href="#">Shakira Vivo</a></p>
+                                                <p class="views">-10 123 123 Views</p>
+                                    </li>
+                    
+                            </div>
+                            <div class="col-md-3">
+                                    <li class="col-md-2 video">
+                                            <div class="area">
+                                                    <div class="mask">
+                                                        <div class="vertical-align">
+                                                            <i class="fa fa-play-circle"></i>
+                                                            <p>Play Now</p>
+                                                        </div><!--vertical align--> 
+                                                    </div><!--mask-->
+                                                        <img src="images/vector.jpg" width="200" height="80" class="img-responsive">
+                                                        <span class="duration">44:21</span>
+                                                   
+                                                </div><!--area-->
+                                                <h6>Shakira Waka-Waka</h6>
+                                                <p><span>3 Days Ago</span>By <a href="#"> Nike Shoes</a></p>
+                                                <p class="views">-21 943 768 Views</p>
+                                    </li>
+                    
+                            </div>
+                            </div>
+                        </div>
+                        <hr>
+<footer>
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Press & Blog</a></li>
+        <li><a href="#">Copyrights</a></li>
+        <li><a href="#">Creators & Partners</a></li>
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Developers</a></li>
+    </ul>
+    <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Policy & Safety</a></li>
+            <li><a href="#">Send Feedback</a></li>
+            <li><a href="#">Try Something New</a></li>
+        </ul>
+        <h4>
+            Copyright &copy;2015 Youtube inc.
+        </h4>
+</footer>
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
